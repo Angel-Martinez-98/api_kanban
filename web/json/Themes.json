@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "name": "primary",
+    "primary_color": "#000",
+    "second_color": "#000",
+    "third_color": "#000",
+    "font_color": "#000"
+  }
+]

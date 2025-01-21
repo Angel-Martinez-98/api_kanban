@@ -1,0 +1,12 @@
+[
+  {
+    "id": "idseguro",
+    "name": "name",
+    "lastname": "lastname",
+    "second_lastname": "second_lastname",
+    "username": "username",
+    "password": "password",
+    "email": "email",
+    "projects": [1, 4]
+  }
+]
