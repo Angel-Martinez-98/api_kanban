@@ -1,10 +1,10 @@
 import express from "express";
 import { properties } from "./properties.js";
+import { PublicRouter } from "./routes/Categories/Public.js";
 const app = express();
 app.use(express.json());
-app.get("/", (req, res) => {
-  res.json({ message: "Hola mundo" });
-});
+
+app.use("/categories", PublicRouter);
 
 const { HOST, PORT } = properties;
 app.listen(PORT, () => {

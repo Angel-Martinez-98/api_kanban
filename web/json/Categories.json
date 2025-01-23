@@ -2,5 +2,9 @@
   {
     "id": 1,
     "name": "category_name"
+  },
+  {
+    "id": 2,
+    "name": "category_name_2"
   }
 ]
