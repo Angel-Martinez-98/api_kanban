@@ -5,3 +5,6 @@ export const PublicRouter = Router();
 
 PublicRouter.get("/", PublicController.getAll);
 PublicRouter.get("/:id", PublicController.getCategory);
+PublicRouter.post("/", PublicController.createCategory);
+PublicRouter.put("/:id", PublicController.updateCategory);
+PublicRouter.delete("/:id", PublicController.deleteCategory);

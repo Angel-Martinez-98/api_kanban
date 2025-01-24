@@ -1,0 +1,24 @@
+### Get All Categories
+GET http://localhost:8080/categories
+
+### Get Category
+GET http://localhost:8080/categories/2
+
+### Create Category
+POST http://localhost:8080/categories
+Content-Type: application/json
+
+{
+    "name" : "otra cosa"
+}
+
+### Update Category
+PUT http://localhost:8080/categories/1
+Content-Type: application/json
+
+{
+    "name" : "cosa otra"
+}
+
+### Delete Category
+DELETE  http://localhost:8080/categories/3

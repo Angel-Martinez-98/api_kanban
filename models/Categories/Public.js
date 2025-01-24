@@ -16,4 +16,30 @@ export class PublicModel {
     }
     return category;
   }
+  static async createCategory({ name }) {
+    Categories.push({ id: Categories.length + 1, name });
+    return { message: "Category created" };
+  }
+
+  static async updateCategory({ id, data }) {
+    const categoryIndex = Categories.findIndex((category) => category.id == id);
+    if (categoryIndex === -1) {
+      return null;
+    }
+    const updateCategory = {
+      ...Categories[categoryIndex],
+      ...data,
+    };
+    Categories[categoryIndex] = updateCategory;
+
+    return { message: "Category updated" };
+  }
+  static async deleteCategory({ id }) {
+    const categoryIndex = Categories.findIndex((category) => category.id == id);
+    if (categoryIndex === -1) {
+      return null;
+    }
+    Categories.splice(categoryIndex, 1);
+    return { message: "Category deleted" };
+  }
 }
