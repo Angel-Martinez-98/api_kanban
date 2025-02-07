@@ -1,6 +1,7 @@
 import express from "express";
 import { properties } from "./properties.js";
 import { PublicRouter } from "./routes/Categories/Public.js";
+import { CommentsPublicRouter } from "./routes/Comments/Public.js";
 const app = express();
 app.use(express.json());
 
@@ -8,6 +9,7 @@ app.get("/", (req, res) => {
   return res.status(200).json({ message: "OK" });
 });
 app.use("/categories", PublicRouter);
+app.use("/comments", CommentsPublicRouter);
 
 const { HOST, PORT } = properties;
 app.listen(PORT, () => {

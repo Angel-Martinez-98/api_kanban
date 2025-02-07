@@ -1,0 +1,30 @@
+### Get All Comments
+GET http://localhost:8080/comments
+
+### Get Comment
+GET http://localhost:8080/comments/1
+
+### Create Comment
+POST http://localhost:8080/comments
+Content-Type: application/json
+
+{
+    "user_id": "userid",
+    "task_id": 1,
+    "comment": "comments",
+    "add_date": "2025-01-01"
+}
+
+### Update Comment
+PUT http://localhost:8080/comments/1
+Content-Type: application/json
+
+{
+    "user_id": "userid",
+    "task_id": 1,
+    "comment": "comments update",
+    "add_date": "2025-01-01"
+}
+
+### Delete Comment
+DELETE  http://localhost:8080/comments/1
