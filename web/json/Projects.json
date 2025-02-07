@@ -3,7 +3,24 @@
     "id": 1,
     "name": "name project",
     "code": "code1234",
-    "process": ["Do", "Doing", "Done"],
+    "process": [
+      "Do", 
+      "Doing", 
+      "Done"
+    ],
+    "add_date": "2025-01-01",
+    "initial_date": "2025-01-01",
+    "final_date": "2025-01-01"
+  },
+  {
+    "id": 2,
+    "name": "name project",
+    "code": "code1234",
+    "process": [
+      "Do", 
+      "Doing", 
+      "Done"
+    ],
     "add_date": "2025-01-01",
     "initial_date": "2025-01-01",
     "final_date": "2025-01-01"
