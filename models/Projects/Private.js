@@ -38,7 +38,7 @@ export class PrivateModel {
         return { message: "Project Updated!" };
     }
 
-    static async deleteCategory ({ id }) {
+    static async deleteProject ({ id }) {
         const projectIndex = Projects.findIndex((project) => project.id == id);
 
         if (projectIndex === -1) {

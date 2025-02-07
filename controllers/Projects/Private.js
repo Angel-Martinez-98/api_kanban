@@ -41,7 +41,7 @@ export class PrivateController {
     static async deleteProject (req, res) {
         try {
             const { id } = req.params;
-            const project = await PrivateController.deleteProject({
+            const project = await PrivateModel.deleteProject({
                 id
             });
 
